@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="res/images/favicon.ico">
+    <title>My Dashboard</title>
+    <link rel="stylesheet" href="res/css/style.css">
+ </head>
+ <body>
+    <header>
+        <strong>Welcome to your dashboard!</strong>
+    </header>
+
+    <p class="static">This is a static paragraph</p>
+    <p class="relative">This is a relative paragraph</p>
+    <div class ="parentpositioning">
+        <p class ="absolute">This is an absolute paragraph</p>
+    </div>
+    <p class ="fixed">This is a fixed paragraph</p>
+    <p class ="sticky">This is a sticky paragraph</p>
+    <section>
+        <div>
+            <img src="res/images/me.png" width="128" height="128" alt="My picture">
+        </div>
+        <div>
+            <ul>
+                <li>Abdelilah YZ</li>
+                <li> A date following this format 20/09/2024</li>
+                <li> Cybersecurity Engineering </li>
+            </ul>
+        </div>
+        <div>
+            <strong>2.65</strong>
+        </div>
+    </section>
+    <section>
+        <h1>Courses</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Course Title</th>
+                <th>Semester</th>
+                <th>Grade</th>
+            </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Courses with grades</td>
+                </tr>
+            </tfoot>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td> <a href="https://www.coursera.org/learn/agile-software-development" target="_blank"> Agile software development </a></td>
+                <td>fall</td>
+                <td>82</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td> <a href="https://www.open.edu/openlearn/science-maths-technology/systems-modelling/content-section-0?active-tab=description-tab" target="_blank"> Systems modelling </a></td>
+                <td>fall</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td> <a href="https://www.coursera.org/specializations/requirements-engineering-secure-software" target="_blank"> Requirements Engineering </a></td>
+                <td>fall</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td> <a href="https://www.coursera.org/courses?query=human%20computer%20interaction" target="_blank"> Human Computer Interaction </a></td>
+                <td>fall</td>
+                <td>65</td>
+            </tr>
+            </tbody>
+        </table>
+   </section>
+   <section>
+    <h2>Add New Course</h2>
+    <form>
+        <label for="courseTitle"><strong>Course Title:</strong></label><br>
+        <input type="text" id="courseTitle" name="courseTitle"><br><br>
+        
+        <label for="semester">Semester:</label><br>
+        <select id="semester" name="semester">
+            <option value="fall">Fall</option>
+            <option value="spring">Spring</option>
+        </select><br><br>
+        
+        <label>Attendance:</label><br>
+        <input type="radio" id="virtual" name="attendance" value="virtual">
+        <label for="virtual">Virtual attendance</label><br>
+        <input type="radio" id="physical" name="attendance" value="physical">
+        <label for="physical">Physical attendance</label><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://www.inpt.ac.ma/" target="_blank">moodle</a>
+            </li>  
+            <li>
+                <a href="https://m.inpt.ac.ma/" target="_blank">Courses</a>
+            </li>
+        </ul>
+    </footer>
+           
+ </body>
+</html>
